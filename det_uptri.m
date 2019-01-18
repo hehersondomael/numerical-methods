@@ -20,7 +20,7 @@
 ##
 ## @var{Adet} returns the determinant of A.
 ##
-## @var{At} returns a table of step-by-step elementary row operations
+## @var{At} returns a table of column-by-column elementary row operations
 ## performed to transform A into an upper triangular matrix.
 ## @seealso{det}
 ## @end deftypefn
