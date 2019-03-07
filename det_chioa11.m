@@ -22,7 +22,7 @@
 ## @var{Adet} returns the determinant of A.
 ##
 ## @var{At} returns the matrix obtained using reduction method using A(1,1) as
-## its reference to create n-1 x n-1 matri.
+## its reference to create n-1 x n-1 matrix.
 ##
 ## @seealso{det}
 ## @end deftypefn
@@ -30,7 +30,7 @@
 ## Author: Heherson Domael <Heherson Domael@LAPTOP-MQALPEGV>
 ## Created: 2019-03-07
 
-function [Adet, At] = det_chio(A)
+function [Adet, At] = det_chioa11(A)
   if rows(A) != columns(A)
     sprintf("Input matrix must be square! Determinant does not exist.")
     Adet = "N/A";
