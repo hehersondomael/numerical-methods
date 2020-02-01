@@ -29,7 +29,7 @@ function At = linsys_equalmn_cramer (Acoeff, Aconst)
   if det(Acoeff) == 0
     sprintf("The system has either no nontrivial solutions or an infinite number of solutions.")
     At = "N/A";
-  elseif rows(Acoeff)!=columns(Acoeff)
+  elseif rows(Acoeff) != columns(Acoeff)
     sprintf("Input coefficient matrix must be square!")
     At = "N/A";
   elseif rows(Aconst) != rows(Acoeff)
