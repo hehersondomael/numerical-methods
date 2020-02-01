@@ -19,6 +19,9 @@
 ## Solve using Cramer's rule the given system of linear equations with
 ## equal number of equations and unknowns.
 ## 
+## @var{At} returns the solutions to linear equations with equal number of
+## equations and unkowns.
+## 
 ## @seealso{linsolve}
 ## @end deftypefn
 
