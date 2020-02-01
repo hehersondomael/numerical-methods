@@ -1,4 +1,4 @@
-## Copyright (C) 2019 Heherson Domael <h.domael@outlook.com>
+## Copyright (C) 2020 Heherson Domael <h.domael@outlook.com>
 ## 
 ## This program is free software: you can redistribute it and/or modify it
 ## under the terms of the GNU General Public License as published by
