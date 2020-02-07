@@ -1,4 +1,4 @@
-## Copyright (C) 2019 Heherson Domael <h.domael@outlook.com>
+## Copyright (C) 2020 Heherson Domael <h.domael@outlook.com>
 ## 
 ## This program is free software: you can redistribute it and/or modify it
 ## under the terms of the GNU General Public License as published by
@@ -38,18 +38,23 @@ function [Ainv, At] = inv_mat (A)
     Adet = "N/A";
     At = "N/A";
   else
-    A = [eye(rows(A)) A];
-    for col=1+(columns(A)/2):columns(A)
+    A = [A eye(rows(A))];
+    for col=1:(columns(A)/2)
       for row=1:rows(A)
-        if row+rows(A)==col
-          A(row,:) = A(row,:)/A(row,col);
+        if row==col
+          # A(row,:) = A(row,:)/A(row,col)
           continue
         else
-          A(row,:) -= A(row,col)*A(col-(columns(A)/2),:)/A(col-(columns(A)/2),col);
+          A(row,:) -= A(row,col)*A(col,:)/A(col,col);
         endif
+        if col==rows(A)
+          for i=1:rows(A)
+            A(i,:) = (1/A(i,i))*A(i,:);
+          endfor
+        endif
+        At((col*rows(A))-(rows(A)-1):(col*rows(A)),:) = A;
       endfor
-      At((col-(columns(A)/2))*rows(A)-rows(A)+1:(col-(columns(A)/2))*rows(A), 1:(columns(A)/2)) = A(1:rows(A),1:columns(A)/2);
     endfor
-    Ainv = At((col-(columns(A)/2))*rows(A)-rows(A)+1:rows(At),:);
+    Ainv=At(rows(At)-(rows(A)-1):rows(At),(columns(At)-(rows(A)-1)):columns(At));
   endif
 endfunction
