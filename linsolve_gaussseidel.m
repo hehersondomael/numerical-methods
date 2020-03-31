@@ -15,14 +15,14 @@
 ## <https://www.gnu.org/licenses/>.
 
 ## -*- texinfo -*-
-## @deftypefn {} {[@var{At}, @var{Aaug}, @var{Adom}] =} gaussseidel (@var{Acoeff}, @var{Aconst}, @var{Ainit})
+## @deftypefn {} {[@var{At}, @var{Aaug}, @var{Adom}] =} linsolve_gaussseidel (@var{Acoeff}, @var{Aconst}, @var{Ainit})
 ## 
 ## Solve using Gauss-Seidel method the systems of linear equations with equal number of equations and
 ## unknowns. The input matrix must be diagonally dominant, thus, non-diagonally dominant matrix A
 ## is automatically arranged.
 ## 
 ## @var{At} returns the solutions to linear equations with equal number of
-## equations and unkowns.
+## equations and unknowns.
 ## 
 ## @var{Aaug} returns the augmented table from using the x values obtained
 ## from the previous iteration for the present one.
