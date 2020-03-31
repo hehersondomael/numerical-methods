@@ -1,4 +1,4 @@
-## Copyright (C) 2020 Heherson Domael
+## Copyright (C) 2020 Heherson Domael <h.domael@outlook.com>
 ## 
 ## This program is free software: you can redistribute it and/or modify it
 ## under the terms of the GNU General Public License as published by
@@ -29,8 +29,6 @@
 ## 
 ## @var{Adom} returns the arranged diagonally dominant matrix including the
 ## constants of the arranged systems of linear equations.
-## @end deftypefn
-## @seealso{}
 ## @end deftypefn
 
 ## Author: Heherson Domael <Heherson Domael@LAPTOP-MQALPEGV>
