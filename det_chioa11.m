@@ -15,7 +15,7 @@
 ## <https://www.gnu.org/licenses/>.
 
 ## -*- texinfo -*-
-## @deftypefn {} {[@var{Adet}, @var{At}] =} det_chio (@var{A})
+## @deftypefn {} {[@var{Adet}, @var{At}] =} det_chioa11 (@var{A})
 ## Compute the determinant of A of size n x n using Chio's condensation method
 ## with reference at A(1,1).
 ##
